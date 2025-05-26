@@ -14,9 +14,9 @@
       "",
       "<style lang='scss'>",
       "",
-      "</style>",
+      "</style>"
     ],
-    "description": "vue3单文件模板", //这里是描述
+    "description": "vue3单文件模板" //这里是描述
   },
   "vue3定义属性": {
     "prefix": "props",
@@ -30,29 +30,29 @@
       "    placeholder: '请输入',",
       "    type: 'text',",
       "  },",
-      ")",
+      ")"
     ],
-    "description": "vue3定义属性",
+    "description": "vue3定义属性"
   },
   "vue3定义组件slot": {
     "prefix": "slot",
     "body": ["<slot name=\"default\"></slot>"],
-    "description": "vue3定义组件slot",
+    "description": "vue3定义组件slot"
   },
   "vue3组件使用slot": {
     "prefix": "slottem",
     "body": ["<template #label>+86</template>"],
-    "description": "vue3定义组件slot",
+    "description": "vue3定义组件slot"
   },
   "vue3使用ref": {
     "prefix": "ref",
     "body": ["import { ref } from 'vue'", "let isError = ref(false)"],
-    "description": "vue3使用ref",
+    "description": "vue3使用ref"
   },
   "vue3引入组件": {
     "prefix": "importcom",
     "body": ["import XIcon from '@/components/Base/Basic/XIcon.vue'", ""],
-    "description": "vue3引入组件",
+    "description": "vue3引入组件"
   },
   "vue3自定义属性": {
     "prefix": "emit",
@@ -62,14 +62,14 @@
       "  (e: 'click', index: number): void",
       "}>()",
       "",
-      "emit('click', index)",
+      "emit('click', index)"
     ],
-    "description": "vue3自定义属性",
+    "description": "vue3自定义属性"
   },
   "vue3动态class": {
     "prefix": "class",
     "body": [":class=\"{", "      'cursor-pointer': cursor,", "    }\""],
-    "description": "vue3动态class",
+    "description": "vue3动态class"
   },
   "vue3定义计算属性": {
     "prefix": "compu3",
@@ -77,48 +77,48 @@
       "const innerModelValue = computed({",
       "  get: () => props.modelValue,",
       "  set: (value) => emit('update:modelValue', value),",
-      "})",
+      "})"
     ],
-    "description": "vue3定义计算属性",
+    "description": "vue3定义计算属性"
   },
   "vue3中使用tihs": {
     "prefix": "this3",
     "body": [
       "import {  getCurrentInstance,type ComponentInternalInstance} from 'vue'",
       "const instance = getCurrentInstance() as ComponentInternalInstance",
-      "",
+      ""
     ],
-    "description": "vue3中使用tihs",
+    "description": "vue3中使用tihs"
   },
   "vue3-生命周期-卸载前": {
     "prefix": "onUnmounted",
     "body": ["onUnmounted(() => {", "    ", " })"],
-    "description": "vue3-生命周期-卸载前",
+    "description": "vue3-生命周期-卸载前"
   },
   "flexcenter": {
     "prefix": "flexcenter",
     "body": ["flex flex-row items-center justify-center"],
-    "description": "flex居中",
+    "description": "flex居中"
   },
   "tailwind cursor-pointer": {
     "prefix": "pointer",
     "body": ["cursor-pointer"],
-    "description": "tailwind cursor-pointer",
+    "description": "tailwind cursor-pointer"
   },
   "定义一个函数": {
     "prefix": "func",
     "body": ["function name(params:type) {", "  ", "}"],
-    "description": "定义一个函数",
+    "description": "定义一个函数"
   },
   "定义一个鼠标事件函数": {
     "prefix": "eventfunc",
     "body": ["function handleClick(e: MouseEvent) {", "", "}"],
-    "description": "定义一个鼠标事件函数",
+    "description": "定义一个鼠标事件函数"
   },
   "元素是否可见变量": {
     "prefix": "visi",
     "body": ["visible"],
-    "description": "元素是否可见变量",
+    "description": "元素是否可见变量"
   },
   "定义一个input事件": {
     "prefix": "inputeve",
@@ -126,24 +126,24 @@
       "function handleInput(e: Event) {",
       "  const value = (e.target as HTMLInputElement).value",
       "  emit('update:modelValue', value)",
-      "}",
+      "}"
     ],
-    "description": "定义一个input事件",
+    "description": "定义一个input事件"
   },
   "js判断对象是否有某个属性": {
     "prefix": "hasow",
     "body": ["hasOwnProperty"],
-    "description": "js判断对象是否有某个属性",
+    "description": "js判断对象是否有某个属性"
   },
   "js数组造数据": {
     "prefix": "array",
     "body": ["new Array(10000000 / 4).fill(rules[0])"],
-    "description": "js数组造数据",
+    "description": "js数组造数据"
   },
   "ts定义obj": {
     "prefix": "tsobj",
     "body": ["Record<string, any>", "", "{", "  [key:string]:string", "}"],
-    "description": "ts定义obj",
+    "description": "ts定义obj"
   },
   "ts定义枚举": {
     "prefix": "tsenum",
@@ -151,29 +151,29 @@
       "export enum validType {",
       "  phone = 'phone',",
       "  date = 'date',",
-      "}",
+      "}"
     ],
-    "description": "ts定义枚举",
+    "description": "ts定义枚举"
   },
   "ts定义接口": {
     "prefix": "tsinter",
     "body": ["export interface ruleType {", "  validType?: validType", "}"],
-    "description": "ts定义接口",
+    "description": "ts定义接口"
   },
   "ts定义类型": {
     "prefix": "tstype",
     "body": ["export type formRulesType = Record<string, Array<ruleType>>"],
-    "description": "ts定义类型",
+    "description": "ts定义类型"
   },
   "变量-初始值": {
     "prefix": "initial",
     "body": ["initial"],
-    "description": "变量-初始值",
+    "description": "变量-初始值"
   },
   "变量-初始动作": {
     "prefix": "initializeState",
     "body": ["initializeState"],
-    "description": "变量-初始动作",
+    "description": "变量-初始动作"
   },
   "变量-定时器id": {
     "prefix": "intervalId",
@@ -181,8 +181,21 @@
       "  /**",
       "   * 定时器Id",
       "   */",
-      "  let intervalId: number | null",
+      "  let intervalId: number | null"
     ],
-    "description": "变量-定时器id",
+    "description": "变量-定时器id"
   },
+  "vue3-hook": {
+    "prefix": "hook",
+    "body": [
+      "const useXX = () => {",
+      "  function b() {}",
+      "  return {",
+      "    b,",
+      "  }",
+      "}",
+      "export default useXX"
+    ],
+    "description": "vue3-hook"
+  }
 }
