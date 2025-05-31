@@ -36,22 +36,32 @@
   },
   "vue3定义组件slot": {
     "prefix": "slot",
-    "body": ["<slot name=\"default\"></slot>"],
+    "body": [
+      "<slot name=\"default\"></slot>"
+    ],
     "description": "vue3定义组件slot",
   },
   "vue3组件使用slot": {
     "prefix": "slottem",
-    "body": ["<template #label>+86</template>"],
+    "body": [
+      "<template #label>+86</template>"
+    ],
     "description": "vue3定义组件slot",
   },
   "vue3使用ref": {
     "prefix": "ref",
-    "body": ["import { ref } from 'vue'", "let isError = ref(false)"],
+    "body": [
+      "import { ref } from 'vue'",
+      "let isError = ref(false)"
+    ],
     "description": "vue3使用ref",
   },
   "vue3引入组件": {
     "prefix": "importcom",
-    "body": ["import XIcon from '@/components/Base/Basic/XIcon.vue'", ""],
+    "body": [
+      "import XIcon from '@/components/Base/Basic/XIcon.vue'",
+      ""
+    ],
     "description": "vue3引入组件",
   },
   "vue3自定义属性": {
@@ -68,7 +78,11 @@
   },
   "vue3动态class": {
     "prefix": "class",
-    "body": [":class=\"{", "      'cursor-pointer': cursor,", "    }\""],
+    "body": [
+      ":class=\"{",
+      "      'cursor-pointer': cursor,",
+      "    }\""
+    ],
     "description": "vue3动态class",
   },
   "vue3定义计算属性": {
@@ -92,32 +106,50 @@
   },
   "vue3-生命周期-卸载前": {
     "prefix": "onUnmounted",
-    "body": ["onUnmounted(() => {", "    ", " })"],
+    "body": [
+      "onUnmounted(() => {",
+      "    ",
+      " })"
+    ],
     "description": "vue3-生命周期-卸载前",
   },
   "flexcenter": {
     "prefix": "flexcenter",
-    "body": ["flex flex-row items-center justify-center"],
+    "body": [
+      "flex flex-row items-center justify-center"
+    ],
     "description": "flex居中",
   },
   "tailwind cursor-pointer": {
     "prefix": "pointer",
-    "body": ["cursor-pointer"],
+    "body": [
+      "cursor-pointer"
+    ],
     "description": "tailwind cursor-pointer",
   },
   "定义一个函数": {
     "prefix": "func",
-    "body": ["function name(params:type) {", "  ", "}"],
+    "body": [
+      "function name(params:type) {",
+      "  ",
+      "}"
+    ],
     "description": "定义一个函数",
   },
   "定义一个鼠标事件函数": {
     "prefix": "eventfunc",
-    "body": ["function handleClick(e: MouseEvent) {", "", "}"],
+    "body": [
+      "function handleClick(e: MouseEvent) {",
+      "",
+      "}"
+    ],
     "description": "定义一个鼠标事件函数",
   },
   "元素是否可见变量": {
     "prefix": "visi",
-    "body": ["visible"],
+    "body": [
+      "visible"
+    ],
     "description": "元素是否可见变量",
   },
   "定义一个input事件": {
@@ -132,17 +164,27 @@
   },
   "js判断对象是否有某个属性": {
     "prefix": "hasow",
-    "body": ["hasOwnProperty"],
+    "body": [
+      "hasOwnProperty"
+    ],
     "description": "js判断对象是否有某个属性",
   },
   "js数组造数据": {
     "prefix": "array",
-    "body": ["new Array(10000000 / 4).fill(rules[0])"],
+    "body": [
+      "new Array(10000000 / 4).fill(rules[0])"
+    ],
     "description": "js数组造数据",
   },
   "ts定义obj": {
     "prefix": "tsobj",
-    "body": ["Record<string, any>", "", "{", "  [key:string]:string", "}"],
+    "body": [
+      "Record<string, any>",
+      "",
+      "{",
+      "  [key:string]:string",
+      "}"
+    ],
     "description": "ts定义obj",
   },
   "ts定义枚举": {
@@ -157,22 +199,32 @@
   },
   "ts定义接口": {
     "prefix": "tsinter",
-    "body": ["export interface ruleType {", "  validType?: validType", "}"],
+    "body": [
+      "export interface ruleType {",
+      "  validType?: validType",
+      "}"
+    ],
     "description": "ts定义接口",
   },
   "ts定义类型": {
     "prefix": "tstype",
-    "body": ["export type formRulesType = Record<string, Array<ruleType>>"],
+    "body": [
+      "export type formRulesType = Record<string, Array<ruleType>>"
+    ],
     "description": "ts定义类型",
   },
   "变量-初始值": {
     "prefix": "initial",
-    "body": ["initial"],
+    "body": [
+      "initial"
+    ],
     "description": "变量-初始值",
   },
   "变量-初始动作": {
     "prefix": "initializeState",
-    "body": ["initializeState"],
+    "body": [
+      "initializeState"
+    ],
     "description": "变量-初始动作",
   },
   "变量-定时器id": {
@@ -200,32 +252,54 @@
   },
   "js导入整个对象": {
     "prefix": "importall",
-    "body": ["import * as A from ''"],
+    "body": [
+      "import * as A from ''"
+    ],
     "description": "js导入整个对象",
   },
   "js导入默认对象": {
     "prefix": "importdefault",
-    "body": ["import A from ''"],
+    "body": [
+      "import A from ''"
+    ],
     "description": "js导入默认对象",
   },
   "js导入对象解构形式": {
     "prefix": "import",
-    "body": ["import {  } from \"\";"],
+    "body": [
+      "import {  } from \"\";"
+    ],
     "description": "js导入对象解构形式",
   },
   "js导出默认对象": {
     "prefix": "exportdefault",
-    "body": ["export default ''"],
+    "body": [
+      "export default ''"
+    ],
     "description": "js导出默认对象",
+  },
+  "导出默认": {
+    "prefix": "exportdefault2",
+    "body": [
+      "export { default as  } from ''"
+    ],
+    "description": "导出默认"
   },
   "js导出对象": {
     "prefix": "export",
-    "body": ["export {", "    ", "}"],
+    "body": [
+      "export {",
+      "    ",
+      "}"
+    ],
     "description": "js导出对象",
   },
   "js导出整个对象": {
     "prefix": "exportall",
-    "body": ["export * as A from ''", ""],
+    "body": [
+      "export * as A from ''",
+      ""
+    ],
     "description": "js导出整个对象",
   },
 }
