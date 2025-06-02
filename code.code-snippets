@@ -127,6 +127,13 @@
     ],
     "description": "tailwind cursor-pointer",
   },
+  "tailwind 选择子元素": {
+    "prefix": ">div",
+    "body": [
+      "[&_>div]:mr-10"
+    ],
+    "description": "tailwind 选择子元素"
+  },
   "定义一个函数": {
     "prefix": "func",
     "body": [
@@ -278,12 +285,12 @@
     ],
     "description": "js导出默认对象",
   },
-  "导出默认": {
+  "js导出默认对象2": {
     "prefix": "exportdefault2",
     "body": [
       "export { default as  } from ''"
     ],
-    "description": "导出默认"
+    "description": "js导出默认对象2"
   },
   "js导出对象": {
     "prefix": "export",
