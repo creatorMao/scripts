@@ -358,19 +358,5 @@
     ],
     "description": "js promise"
   },
-  "js hook": {
-    "prefix": "hook",
-    "body": [
-      "import { ref } from 'vue'",
-      "export default <T>() => {",
-      "  let isLoading = ref(false)",
-      "  let run = () => {}",
-      "  return {",
-      "    isLoading,",
-      "    run,",
-      "  }",
-      "}"
-    ],
-    "description": "js hook"
-  }
+  
 }
