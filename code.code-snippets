@@ -316,5 +316,46 @@
       "const { isRequesting, request } = useRequest(apiClient.userSendcodePost)"
     ],
     "description": "使用request hook"
+  },
+  "js promise finally": {
+    "prefix": "finally",
+    "body": [
+      ".finally(()=>{",
+      "  ",
+      "})"
+    ],
+    "description": "js promise finally"
+  },
+  "js promise then": {
+    "prefix": "then",
+    "body": [
+      ".then((res) => {",
+      "  ",
+      "})"
+    ],
+    "description": "js promise then"
+  },
+  "js promise error": {
+    "prefix": "catch",
+    "body": [
+      ".catch((error) => {",
+      "  ",
+      "})"
+    ],
+    "description": "js promise error"
+  },
+  "js promise": {
+    "prefix": "promise",
+    "body": [
+      "reqFn()",
+      "      .then((res) => {",
+      "      })",
+      "      .catch((error) => {",
+      "        //console.log(error);",
+      "      })",
+      "      .finally(() => {",
+      "      })"
+    ],
+    "description": "js promise"
   }
 }
