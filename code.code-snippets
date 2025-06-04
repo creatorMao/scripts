@@ -309,4 +309,12 @@
     ],
     "description": "js导出整个对象",
   },
+  "使用request hook": {
+    "prefix": "userequest",
+    "body": [
+      "import { useRequest } from 'none-ui/hooks'",
+      "const { isRequesting, request } = useRequest(apiClient.userSendcodePost)"
+    ],
+    "description": "使用request hook"
+  }
 }
