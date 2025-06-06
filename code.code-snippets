@@ -104,6 +104,21 @@
     ],
     "description": "vue3中使用tihs",
   },
+  "vue3使用provide": {
+    "prefix": "provide",
+    "body": [
+      "provide<any>('key', {})"
+    ],
+    "description": "vue3使用provide"
+  },
+  "vue3使用inject": {
+    "prefix": "inject",
+    "body": [
+      "const injectA = inject<any>('key', {})",
+      ""
+    ],
+    "description": "vue3使用inject"
+  },
   "vue3-生命周期-卸载前": {
     "prefix": "onUnmounted",
     "body": [
@@ -385,5 +400,13 @@
       "}"
     ],
     "description": "js 删除数组指定的id"
+  },
+  "创建id": {
+    "prefix": "createId ",
+    "body": [
+      "import { createId } from 'seemly'",
+      ""
+    ],
+    "description": "创建id"
   }
 }
