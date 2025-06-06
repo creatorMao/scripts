@@ -311,7 +311,7 @@
   "js导出整个对象": {
     "prefix": "exportall",
     "body": [
-      "export * as A from ''",
+      "export * from ''",
       ""
     ],
     "description": "js导出整个对象",
