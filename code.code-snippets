@@ -113,12 +113,19 @@
     ],
     "description": "vue3-生命周期-卸载前",
   },
-  "flexcenter": {
-    "prefix": "flexcenter",
+  "flexcenterrow": {
+    "prefix": "flexcenterrow",
     "body": [
       "flex flex-row items-center justify-center"
     ],
-    "description": "flex居中",
+    "description": "flex水平居中",
+  },
+  "flexcentercol": {
+    "prefix": "flexcentercol",
+    "body": [
+      "flex flex-col items-center"
+    ],
+    "description": "flex垂直居中",
   },
   "tailwind cursor-pointer": {
     "prefix": "pointer",
