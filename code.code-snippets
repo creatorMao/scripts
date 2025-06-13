@@ -408,5 +408,37 @@
       ""
     ],
     "description": "创建id"
+  },
+  "合并对象": {
+    "prefix": "assign",
+    "body": [
+      "return Object.assign({ unmount }, extractedApi)",
+      ""
+    ],
+    "description": "合并对象"
+  },
+  "vue3 pinia定义store": {
+    "prefix": "defineStore",
+    "body": [
+      "import { ref, computed } from 'vue'",
+      "import { defineStore } from 'pinia'",
+      "",
+      "export const useCounterStore = defineStore(",
+      "  'counter',",
+      "  () => {",
+      "    const count = ref(0)",
+      "    const doubleCount = computed(",
+      "      () => count.value * 2,",
+      "    )",
+      "    function increment() {",
+      "      count.value++",
+      "    }",
+      "",
+      "    return { count, doubleCount, increment }",
+      "  },",
+      ")",
+      ""
+    ],
+    "description": "vue3 pinia定义store"
   }
 }
