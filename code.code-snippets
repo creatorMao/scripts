@@ -85,8 +85,8 @@
     ],
     "description": "vue3动态class",
   },
-  "vue3定义计算属性": {
-    "prefix": "compu3",
+  "vue3定义计算属性1": {
+    "prefix": "compu3-1",
     "body": [
       "const innerModelValue = computed({",
       "  get: () => props.modelValue,",
@@ -94,6 +94,15 @@
       "})",
     ],
     "description": "vue3定义计算属性",
+  },
+  "vue3定义计算属性2": {
+    "prefix": "compu3-2",
+    "body": [
+      "const innerModelValue = computed(() => {",
+      "  return true",
+      "})"
+    ],
+    "description": "vue3定义计算属性2"
   },
   "vue3中使用tihs": {
     "prefix": "this3",
@@ -440,5 +449,30 @@
       ""
     ],
     "description": "vue3 pinia定义store"
+  },
+  "vue3函数式组件": {
+    "prefix": "vue3fun",
+    "body": [
+      "<script lang=\"ts\">",
+      "import { h } from 'vue'",
+      "import NButton from './NButton.vue'",
+      "",
+      "export default (props: any, { slots }: any) =>",
+      "  h(",
+      "    NButton,",
+      "    {",
+      "      width: 'auto',",
+      "      height: 'auto',",
+      "      bordered: false,",
+      "      padding: false,",
+      "      tabIndex: -1,",
+      "      ...props,",
+      "    },",
+      "    slots,",
+      "  )",
+      "</script>",
+      ""
+    ],
+    "description": "vue3函数式组件"
   }
 }
