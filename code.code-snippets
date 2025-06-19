@@ -48,6 +48,14 @@
     ],
     "description": "vue3定义组件slot",
   },
+  "vue3-判断插槽": {
+    "prefix": "slot-use",
+    "body": [
+      "const slots = useSlots()",
+      "const hasRightSlot = computed(() => !!slots.right)"
+    ],
+    "description": "vue3-判断插槽"
+  },
   "vue3使用ref": {
     "prefix": "ref",
     "body": [
@@ -157,6 +165,41 @@
       "cursor-pointer"
     ],
     "description": "tailwind cursor-pointer",
+  },
+  "tailwind 过度动画时间": {
+    "prefix": "duration",
+    "body": [
+      "duration-250"
+    ],
+    "description": "tailwind 过度动画时间",
+  },
+  "tailwind 相对定位": {
+    "prefix": "relative",
+    "body": [
+      "relative"
+    ],
+    "description": "tailwind 相对定位",
+  },
+  "tailwind 绝对定位": {
+    "prefix": "absolute",
+    "body": [
+      "absolute"
+    ],
+    "description": "tailwind 绝对定位",
+  },
+  "tailwind flex禁止压缩空间": {
+    "prefix": "flex-shrink",
+    "body": [
+      "flex-shrink-0"
+    ],
+    "description": "tailwind flex禁止压缩空间",
+  },
+  "tailwind css水平翻转": {
+    "prefix": "rotate",
+    "body": [
+      "rotate-180"
+    ],
+    "description": "tailwind css水平翻转",
   },
   "tailwind 选择子元素": {
     "prefix": ">div",
