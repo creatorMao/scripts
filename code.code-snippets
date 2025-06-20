@@ -517,5 +517,42 @@
       ""
     ],
     "description": "vue3函数式组件"
+  },
+  "阈值": {
+    "prefix": "threshold",
+    "body": [
+      "threshold"
+    ],
+    "description": "threshold"
+  },
+  "jsmousemove": {
+    "prefix": "mousemove",
+    "body": [
+      "function setVisible(e: MouseEvent) {",
+      "  //鼠标在元素内的xy坐标，左上为00",
+      "  const { offsetX } = e",
+      "",
+      "  //动态获取目标元素的宽",
+      "  const target = e.target as HTMLElement",
+      "  const { width } = target.getBoundingClientRect()",
+      "",
+      "  const distanceToRight = width - offsetX",
+      "  const threshold = 30",
+      "",
+      "  //distanceToRight<0说明在右边框外侧，外侧直接隐藏",
+      "  expendButtonVisible.value = distanceToRight > 0 && distanceToRight < threshold",
+      "}"
+    ],
+    "description": "jsmousemove"
+  },
+  "throttle": {
+    "prefix": "throttle",
+    "body": [
+      "import { throttle } from 'lodash'",
+      "const throttledSetVisible = throttle((e: MouseEvent) => {",
+      "  setVisible(e)",
+      "}, 200)"
+    ],
+    "description": "throttle"
   }
 }
